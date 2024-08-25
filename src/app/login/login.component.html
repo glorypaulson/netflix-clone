@@ -1,0 +1,22 @@
+<div class="absolute">
+    <img src="https://assets.nflxext.com/ffe/siteui/vlv3/dace47b4-a5cb-4368-80fe-c26f3e77d540/becb4b4a-fa87-47ab-b92b-aae2c1c6d6f7/SG-en-20231023-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+        alt="">
+</div>
+<div class="w-full absolute right-0 left-0 p-12 bg-black my-36 mx-auto md:w-3/12 rounded-lg bg-opacity-80">
+   <div class="flex flex-col items-center">
+    <h1 class="text-2xl text-slate-50 font-bold py-2 px-3 text-center flex flex-col">Netflix Sign In</h1>
+    <br>
+    <form method="get" (ngSubmit)="onSubmit()">
+        <div class="flex flex-col py-15 items-center">
+            <input type="email" name="email" id="email" class="rounded-md border border-grey-border bg-custom-black text-white w-60 py-3 px-5" 
+            placeholder="Email" [(ngModel)]="loginData.email" required>
+            <br>
+            <input type="password" name="password" id="password" class="rounded-md border border-grey-border bg-custom-black text-white w-60 py-3 px-5" 
+            placeholder="Password" [(ngModel)]="loginData.password" required>
+            <div class="flex flex-col items-center my-5 rounded-sm">
+                <button type="submit" class="bg-red text-center rounded-sm text-white py-2 w-60" >Sign In</button>
+            </div>
+        </div>
+    </form>
+   </div>
+</div>

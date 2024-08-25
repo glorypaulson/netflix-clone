@@ -1,0 +1,12 @@
+<header class="bg-gray-900 h-[68px] z-10 sticky">
+    <div class="flex gap-5">
+        <img src="/assets/pngwing.com.png" alt="netflix-logo" width="110">
+        <ul class="flex items-center" *ngFor="let item of navList">
+            <li class="text-neutral-200 cursor-pointer text-lg font-extralight hover:text-gray-400 transition-[1s]">{{item}}</li>
+        </ul>
+    </div>
+    <div class="flex-row">
+        <mat-icon>search</mat-icon>
+        <mat-icon>notifications_none</mat-icon>
+    </div>
+</header>
